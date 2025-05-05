@@ -11,18 +11,19 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <Router>
+    <Router basenmae="/portfolio">
       <Navbar />
 
       <div className="app-content">
       <Routes>
+        {/* First route routes to the home page  */}
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
       </div>
-      
+
       <Footer />
     </Router>
   );
