@@ -1,27 +1,40 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import {
+  AiOutlineHome,
+  AiOutlineUser,
+  AiOutlineFundProjectionScreen,
+  AiOutlineContacts
+} from "react-icons/ai";
 
 
 const Navbar = () => {
   return (
 
     <nav className="navbar">
-     <div className="navbar-center">
         <ul className="nav-links">
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">
+            <AiOutlineHome id="navbar-icon" /> Home
+            </Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/about">
+            <AiOutlineUser id="navbar-icon" /> About
+            </Link>
           </li>
           <li>
-            <Link to="/projects">Projects</Link>
+            <Link to="/projects">
+            <AiOutlineFundProjectionScreen id="navbar-icon" /> Projects
+            </Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact">
+            <AiOutlineContacts id="navbar-icon" /> Contact
+            </Link>
           </li>
         </ul>
-    </div>
+    
    </nav>
 );
 };
